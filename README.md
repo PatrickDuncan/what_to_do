@@ -1,2 +1,2 @@
-# What-To-Do-App
+# What To Do App
 A to do list app for Android.
