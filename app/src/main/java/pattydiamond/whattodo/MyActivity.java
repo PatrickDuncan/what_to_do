@@ -1,11 +1,9 @@
 package pattydiamond.whattodo;
 
 import android.annotation.TargetApi;
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -16,29 +14,30 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
-import android.view.View;
+
+import android.view.Menu;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MyActivity extends ActionBarActivity {
 
-    EditText[] Text = new EditText[3];
+    EditText[] Text = new EditText[7];
     NotificationCompat.Builder mBuilder;
     NotificationManager mNotifyMgr;
     int mNotificationId = 001;
-    String content, bullet = Html.fromHtml("&#8226").toString() + " ";
+    String content="", bullet = Html.fromHtml("&#8226").toString() + " ";
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        findMaxLength();
-        Text[0] = (EditText) findViewById(R.id.box_1);
-        Text[1] = (EditText) findViewById(R.id.box_2);
-        Text[2] = (EditText) findViewById(R.id.box_3);
+        for(int i=0; i<Text.length; i++) {
+            int editTextId = getResources().getIdentifier("box_"+Integer.toString(i), "id", getPackageName());
+            Text[i] = (EditText)findViewById(editTextId);
+        }
         loadSavedPreferences();
-        content = bullet + Text[0].getText().toString();
         mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("What To Do?")
@@ -46,8 +45,14 @@ public class MyActivity extends ActionBarActivity {
                 .setOngoing(true)
                 .setShowWhen(false)
                 .setPriority(2);
-        for (int i=1; i<Text.length; i++){
-            content = content + "\n" + bullet + Text[i].getText().toString();
+        for (int i=0; i<Text.length; i++) {
+            if (!Text[i].getText().toString().equals("")) {
+                content += bullet + Text[i].getText().toString() + "\n";
+            }
+        }
+        //removes the extra new line.
+        if (content.lastIndexOf("\n") == content.length()-1){
+            content = content.substring(0,content.length()-1);
         }
         mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
         Intent resultIntent = new Intent(this, MyActivity.class);
@@ -58,26 +63,28 @@ public class MyActivity extends ActionBarActivity {
                 (0, PendingIntent.FLAG_UPDATE_CURRENT);
         mBuilder.setContentIntent(resultPendingIntent);
         mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        Text[0].addTextChangedListener(textChange);
-        Text[1].addTextChangedListener(textChange);
-        Text[2].addTextChangedListener(textChange);
+        for(int i=0; i<7; i++) {
+            Text[i].addTextChangedListener(textChange);
+        }
         mNotifyMgr.notify(mNotificationId, mBuilder.build());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            getWindow().setStatusBarColor(getResources().getColor(R.color.statusbar_text));
+        }
+
     }
 
-    private void findMaxLength() {
-
-    }
-
-    private boolean isTooLarge (TextView text, String newText) {
-        float textWidth = text.getPaint().measureText(newText);
-        return (textWidth >= text.getMeasuredWidth ());
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_my, menu);
+        return true;
     }
 
     private void loadSavedPreferences() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        Text[0].setText(sharedPreferences.getString("string_text1", ""));
-        Text[1].setText(sharedPreferences.getString("string_text2", ""));
-        Text[2].setText(sharedPreferences.getString("string_text3", ""));
+        for (int i=0; i<Text.length; i++) {
+            Text[i].setText(sharedPreferences.getString("string_text"+Integer.toString(i),""));
+        }
     }
 
     private void savePreferences(String key, String value) {
@@ -87,24 +94,27 @@ public class MyActivity extends ActionBarActivity {
         editor.commit();
     }
     public void saveData() {
-        savePreferences("string_text1", Text[0].getText().toString());
-        savePreferences("string_text2", Text[1].getText().toString());
-        savePreferences("string_text3", Text[2].getText().toString());
+        for(int i=0; i<Text.length; i++) {
+            savePreferences("string_text" + Integer.toString(i), Text[i].getText().toString());
+        }
     }
 
     private final TextWatcher textChange = new TextWatcher() {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }
-
-
         public void onTextChanged(CharSequence s, int start, int before, int count) {
         }
-
+        //Updates the notification and saves what's in the textboxs
         public void afterTextChanged(Editable s) {
-            content = bullet + Text[0].getText().toString();
-            mBuilder.setContentText(content);
-            for (int i=1; i<Text.length; i++){
-                content = content + "\n" + bullet + Text[i].getText().toString();
+            content = "";
+            mBuilder.setContentText(Text[0].getText().toString());
+            for (int i=0; i<Text.length; i++) {
+                if (!Text[i].getText().toString().equals("")) {
+                    content += bullet + Text[i].getText().toString() + "\n";
+                }
+            }
+            if (content.lastIndexOf("\n") == content.length()-1){
+                content = content.substring(0,content.length()-1);
             }
             mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
             mNotifyMgr.notify(mNotificationId, mBuilder.build());
