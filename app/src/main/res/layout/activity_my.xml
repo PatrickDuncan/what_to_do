@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <!--red-->
     <EditText android:id="@+id/box_0"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -11,8 +12,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#EF9A9A"
-        android:padding="10dp" />
+        android:background="#FFCDD2"
+        android:padding="10dp"/>
+    <!--orange-->
     <EditText android:id="@+id/box_1"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -20,8 +22,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#FFCC80"
-        android:padding="10dp" />
+        android:background="#FFE0B2"
+        android:padding="10dp"/>
+    <!--yellow-->
     <EditText android:id="@+id/box_2"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -29,8 +32,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#FFF59D"
-        android:padding="10dp" />
+        android:background="#FFF9C4"
+        android:padding="10dp"/>
+    <!--green-->
     <EditText android:id="@+id/box_3"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -38,8 +42,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#A5D6A7"
-        android:padding="10dp" />
+        android:background="#C8E6C9"
+        android:padding="10dp"/>
+    <!--blue-->
     <EditText android:id="@+id/box_4"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -47,8 +52,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#90CAF9"
-        android:padding="10dp" />
+        android:background="#BBDEFB"
+        android:padding="10dp"/>
+    <!--cyan-->
     <EditText android:id="@+id/box_5"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -56,8 +62,9 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#80DEEA"
+        android:background="#B2EBF2"
         android:padding="10dp" />
+    <!--purple-->
     <EditText android:id="@+id/box_6"
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -65,6 +72,6 @@
         android:saveEnabled="true"
         android:inputType="textCapSentences"
         android:maxLength="32"
-        android:background="#CE93D8"
+        android:background="#E1BEE7"
         android:padding="10dp" />
 </LinearLayout>

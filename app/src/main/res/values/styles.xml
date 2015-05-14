@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <!--Support library compatibility -->
-        <item name="actionMenuTextColor">@color/actionbar_text</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 
@@ -13,9 +10,10 @@
     <style name="MyActionBar"
         parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/actionbar_background</item>
-
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
         <!-- Support library compatibility -->
         <item name="background">@color/actionbar_background</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
     </style>
 
     <style name="MyActionBarTitleText"
