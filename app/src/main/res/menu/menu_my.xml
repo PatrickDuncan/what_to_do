@@ -1,10 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MyActivity">
-    <item android:id="@+id/clear" android:title="@string/clear"
-        android:orderInCategory="50"
-        app:showAsAction="never" />
-    <item android:id="@+id/pause" android:title="@string/pause"
-        android:orderInCategory="50"
-        app:showAsAction="never" />
+    <item android:id="@+id/remove" android:title="@string/remove" />
+    <item android:id="@+id/clear" android:title="@string/clear" />
+    <item android:id="@+id/pause" android:title="@string/pause" />
+    <item android:id="@+id/swap" android:title="@string/swap" />
 </menu>

@@ -2,10 +2,10 @@
 <resources>
     <string name="app_name">What To Do?</string>
     <string name="edit_task">Enter a task.</string>
-    <string name="button_send">Send</string>
     <string name="pause">Pause Notifications</string>
     <string name="unpause">UnPause Notifications</string>
     <string name="clear">Clear All</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_display_message">My Message</string>
+    <string name="swap">Swap Text</string>
+    <string name="remove">Auto Remove</string>
+    <string name="Choos">Auto Remove</string>
 </resources>

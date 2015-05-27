@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     <!--red-->
-    <EditText android:id="@+id/box_0"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_0"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,7 +15,7 @@
         android:background="#FFCDD2"
         android:padding="10dp"/>
     <!--orange-->
-    <EditText android:id="@+id/box_1"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_1"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,7 +25,7 @@
         android:background="#FFE0B2"
         android:padding="10dp"/>
     <!--yellow-->
-    <EditText android:id="@+id/box_2"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_2"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -35,7 +35,7 @@
         android:background="#FFF9C4"
         android:padding="10dp"/>
     <!--green-->
-    <EditText android:id="@+id/box_3"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_3"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -45,7 +45,7 @@
         android:background="#C8E6C9"
         android:padding="10dp"/>
     <!--blue-->
-    <EditText android:id="@+id/box_4"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_4"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -55,7 +55,7 @@
         android:background="#BBDEFB"
         android:padding="10dp"/>
     <!--cyan-->
-    <EditText android:id="@+id/box_5"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_5"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -65,7 +65,7 @@
         android:background="#B2EBF2"
         android:padding="10dp" />
     <!--purple-->
-    <EditText android:id="@+id/box_6"
+    <pattydiamond.whattodo.ClearableEditText android:id="@+id/box_6"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
