@@ -1,7 +1,6 @@
 package pattydiamond.whattodo;
 
 import android.annotation.TargetApi;
-import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -9,31 +8,30 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.NotificationCompat;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
 import android.text.format.DateFormat;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.FrameLayout;
-import android.widget.NumberPicker;
 import android.widget.TimePicker;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -43,19 +41,18 @@ public class MyActivity extends AppCompatActivity {
     EditText[] Text = new EditText[7];
     NotificationCompat.Builder mBuilder;
     NotificationManager mNotifyMgr;
-    int mNotificationId = 16, checked = 0, before = -1;
+    private int mNotificationId = 16, checked = 0, before = -1;
     String content, bullet = Html.fromHtml("&#8226").toString() + " ";
     boolean showNotification = true;
     ArrayList mSelectedItems;
-    private AlarmManager alarmMgr;
-    private PendingIntent alarmIntent;
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        for(int i=0; i<Text.length; i++) {
+        for (int i=0; i<Text.length; i++) {
             int editTextId = getResources().getIdentifier("box_"+Integer.toString(i), "id", getPackageName());
             Text[i] = (EditText)findViewById(editTextId);
         }
@@ -82,7 +79,6 @@ public class MyActivity extends AppCompatActivity {
         updateNotification();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            getWindow().setStatusBarColor(getResources().getColor(R.color.statusbar));
         }
     }
 
@@ -186,8 +182,88 @@ public class MyActivity extends AppCompatActivity {
             }
             alert.create().show();
             return true;
+        } else if (item.getItemId() == R.id.theme) {
+            String[] themes = {"Default","Blue","Brown","Green","Grey","Orange","Pink","Purple","Red","Teal"};
+            alert.setTitle("Select a theme")
+                    .setItems(themes, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            colorCase(which);
+                        }
+                    });
+
+            alert.create().show();
+            return true;
         }
         return false;
+    }
+
+    private void colorCase(int which) {
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        saveText("theme", Integer.toString(which));
+        switch (which) {
+            case (0):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.statusbar));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionbar_background)));
+                break;
+            case (1):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.blue700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue500)));
+                break;
+            case (2):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.brown700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.brown500)));
+                break;
+            case (3):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.green700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green500)));
+                break;
+            case (4):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.grey700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.grey500)));
+                break;
+            case (5):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.orange700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.orange500)));
+                break;
+            case (6):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.pink700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.pink500)));
+                break;
+            case (7):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.purple700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple500)));
+                break;
+            case (8):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.red700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red500)));
+                break;
+            case (9):
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    getWindow().setStatusBarColor(getResources().getColor(R.color.teal700));
+                }
+                bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.teal500)));
+                break;
+        }
     }
 
     private void dateDialog(int which) {
@@ -212,6 +288,7 @@ public class MyActivity extends AppCompatActivity {
                 }
             })
             .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
                 @Override
                 public void onClick(DialogInterface dialog, int id) {
 
@@ -230,6 +307,11 @@ public class MyActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         for (int i=0; i<Text.length; i++) {
             Text[i].setText(sharedPreferences.getString("string_text"+Integer.toString(i),""));
+        }
+        if (sharedPreferences.contains("theme")) {
+            colorCase(Integer.parseInt(sharedPreferences.getString("theme", "")));
+        } else {
+            colorCase(0);
         }
     }
 

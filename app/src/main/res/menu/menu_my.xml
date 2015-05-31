@@ -5,4 +5,5 @@
     <item android:id="@+id/clear" android:title="@string/clear" />
     <item android:id="@+id/pause" android:title="@string/pause" />
     <item android:id="@+id/swap" android:title="@string/swap" />
+    <item android:id="@+id/theme" android:title="@string/theme"/>
 </menu>
