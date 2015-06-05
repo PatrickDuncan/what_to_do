@@ -43,8 +43,8 @@ public class MyActivity extends AppCompatActivity {
     NotificationManager mNotifyMgr;
     private int mNotificationId = 16, checked = 0, before = -1;
     String content, bullet = Html.fromHtml("&#8226").toString() + " ";
-    boolean showNotification = true;
-    ArrayList mSelectedItems;
+    boolean showNotification;
+    ArrayList<Integer> mSelectedItems;
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -76,7 +76,9 @@ public class MyActivity extends AppCompatActivity {
             aText.addTextChangedListener(textChange);
         }
         mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        updateNotification();
+        if (showNotification){
+            updateNotification();
+        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
@@ -93,107 +95,113 @@ public class MyActivity extends AppCompatActivity {
         // Handle presses on the action bar items
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setCancelable(true);
-        if (item.getItemId() == R.id.clear) {
-            alert.setMessage("You will be removing all tasks.");
-            alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    for (EditText aText : Text) {
-                        aText.setText("");
-                    }
-                    saveData();
-                    mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(""));
-                    mBuilder.setContentText("");
-                    if (showNotification) {
-                        mNotifyMgr.notify(mNotificationId, mBuilder.build());
-                    }
-                    dialog.cancel();
-                }
-            });
-            alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                }
-            });
-            alert.create().show();
-            return true;
-        } else if (item.getItemId() == R.id.pause) {
-            showNotification = !showNotification;
-            if (showNotification) {
-                updateNotification();
-            } else {
-                mNotifyMgr.cancel(mNotificationId);
-            }
-            return true;
-        } else if (item.getItemId() == R.id.swap){
-            int hasTexts= 0;
-            String[] s = new String[Text.length];
-            mSelectedItems = new ArrayList();
-            for (EditText aText : Text) {
-                if (!aText.getText().toString().equals("")) {
-                    s[hasTexts] = aText.getText().toString();
-                    hasTexts++;
-                }
-            }
-            String[] tasks = Arrays.copyOf(s, hasTexts);
-            alert.setTitle("Swap which?")
-                .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        if (isChecked) {
-                            mSelectedItems.add(which);
-                            if (before == -1) before = which;
-                            checked++;
-                        } else if (mSelectedItems.contains(which)) {
-                            mSelectedItems.remove(Integer.valueOf(which));
-                            checked--;
-                            before = -1;
+        switch (item.getItemId()) {
+            case (R.id.clear): {
+                alert.setMessage("You will be removing all tasks.");
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        for (EditText aText : Text) {
+                            aText.setText("");
                         }
-                        if (checked == 2) {
-                            Editable text0 = Text[before].getText();
-                            Text[before].setText(Text[which].getText());
-                            Text[which].setText(text0);
-                            checked = 0;
-                            before = -1;
-                            //Data is saved in the text changed listener
-                            dialog.cancel();
+                        saveData();
+                        mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(""));
+                        mBuilder.setContentText("");
+                        if (showNotification) {
+                            mNotifyMgr.notify(mNotificationId, mBuilder.build());
                         }
+                        dialog.cancel();
                     }
                 });
-            alert.create().show();
-            return true;
-        } else if (item.getItemId() == R.id.remove) {
-            int hasTexts = 0;
-            String[] s = new String[Text.length];
-            for (EditText aText : Text) {
-                if (!aText.getText().toString().equals("")) {
-                    s[hasTexts] = aText.getText().toString();
-                    hasTexts++;
-                }
+                alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+                alert.create().show();
+                return true;
             }
-            String[] tasks = Arrays.copyOf(s, hasTexts);
-            alert.setTitle("Select which task.")
-                .setItems(tasks, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    dateDialog(which);
+            case (R.id.pause): {
+                showNotification = !showNotification;
+                if (showNotification) {
+                    updateNotification();
+                } else {
+                    mNotifyMgr.cancel(mNotificationId);
                 }
-            });
-            if (showNotification) {
-                updateNotification();
+                savePref("pause", Boolean.toString(showNotification));
+                return true;
             }
-            alert.create().show();
-            return true;
-        } else if (item.getItemId() == R.id.theme) {
-            String[] themes = {"Default","Blue","Brown","Green","Grey","Orange","Pink","Purple","Red","Teal"};
-            alert.setTitle("Select a theme")
-                    .setItems(themes, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            colorCase(which);
-                        }
-                    });
-
-            alert.create().show();
-            return true;
+            case (R.id.swap): {
+                int hasTexts = 0;
+                String[] s = new String[Text.length];
+                mSelectedItems = new ArrayList<>();
+                for (EditText aText : Text) {
+                    if (!aText.getText().toString().equals("")) {
+                        s[hasTexts] = aText.getText().toString();
+                        hasTexts++;
+                    }
+                }
+                String[] tasks = Arrays.copyOf(s, hasTexts);
+                alert.setTitle("Swap which?")
+                        .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                                if (isChecked) {
+                                    mSelectedItems.add(which);
+                                    if (before == -1) before = which;
+                                    checked++;
+                                } else if (mSelectedItems.contains(which)) {
+                                    mSelectedItems.remove(Integer.valueOf(which));
+                                    checked--;
+                                    before = -1;
+                                }
+                                if (checked == 2) {
+                                    Editable text0 = Text[before].getText();
+                                    Text[before].setText(Text[which].getText());
+                                    Text[which].setText(text0);
+                                    checked = 0;
+                                    before = -1;
+                                    //Data is saved in the text changed listener
+                                    dialog.cancel();
+                                }
+                            }
+                        });
+                alert.create().show();
+                return true;
+            }
+            case (R.id.remove): {
+                int hasTexts = 0;
+                String[] s = new String[Text.length];
+                for (EditText aText : Text) {
+                    if (!aText.getText().toString().equals("")) {
+                        s[hasTexts] = aText.getText().toString();
+                        hasTexts++;
+                    }
+                }
+                String[] tasks = Arrays.copyOf(s, hasTexts);
+                alert.setTitle("Select which task.")
+                        .setItems(tasks, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dateDialog(which);
+                            }
+                        });
+                if (showNotification) {
+                    updateNotification();
+                }
+                alert.create().show();
+                return true;
+            }
+            case (R.id.theme): {
+                String[] themes = {"Default", "Blue", "Brown", "Green", "Grey", "Orange", "Pink", "Purple", "Red", "Teal"};
+                alert.setTitle("Select a theme")
+                        .setItems(themes, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                colorCase(which);
+                            }
+                        });
+                alert.create().show();
+                return true;
+            }
         }
         return false;
     }
@@ -201,7 +209,7 @@ public class MyActivity extends AppCompatActivity {
     private void colorCase(int which) {
         ActionBar bar = getSupportActionBar();
         assert bar != null;
-        saveText("theme", Integer.toString(which));
+        savePref("theme", Integer.toString(which));
         switch (which) {
             case (0):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -268,7 +276,7 @@ public class MyActivity extends AppCompatActivity {
 
     private void dateDialog(int which) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        mSelectedItems = new ArrayList();
+        mSelectedItems = new ArrayList<>();
         String[] items = {"Time", "Date"};
         alert.setTitle("Select time and/or date.")
             .setMultiChoiceItems(items, null, new DialogInterface.OnMultiChoiceClickListener() {
@@ -305,17 +313,18 @@ public class MyActivity extends AppCompatActivity {
 
     private void loadSavedPreferences() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        for (int i=0; i<Text.length; i++) {
-            Text[i].setText(sharedPreferences.getString("string_text"+Integer.toString(i),""));
+        for (int i = 0; i < Text.length; i++) {
+            Text[i].setText(sharedPreferences.getString("string_text" + Integer.toString(i), ""));
         }
         if (sharedPreferences.contains("theme")) {
             colorCase(Integer.parseInt(sharedPreferences.getString("theme", "")));
         } else {
             colorCase(0);
         }
+        showNotification = !sharedPreferences.contains("pause") || Boolean.parseBoolean(sharedPreferences.getString("pause", ""));
     }
 
-    private void saveText(String key, String value) {
+    private void savePref(String key, String value) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(key, value);
@@ -324,7 +333,7 @@ public class MyActivity extends AppCompatActivity {
 
     private void saveData() {
         for(int i=0; i<Text.length; i++) {
-            saveText("string_text" + Integer.toString(i), Text[i].getText().toString());
+            savePref("string_text" + Integer.toString(i), Text[i].getText().toString());
         }
     }
 
@@ -350,10 +359,34 @@ public class MyActivity extends AppCompatActivity {
                 mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
             } else {
                 content += s[s.length - 1];
+                mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
                 mBuilder.setContentText(content);
             }
+            System.out.println(content);
             mNotifyMgr.notify(mNotificationId, mBuilder.build());
         }
+    }
+
+    private void updateOrder() {
+        int position = -1;
+        boolean noText = true;
+        for (int i=0;i<Text.length;i++) {
+            if (Text[i].getText().toString().equals("")){
+                position = i;
+                break;
+            }
+        }
+        //Base cases
+        if (position == -1) return;
+        for (int i=position+1;i<Text.length;i++) {
+            if (!Text[i].getText().toString().equals("")){
+                Text[position].setText(Text[i].getText());
+                Text[i].setText("");
+                noText = false;
+                break;
+            }
+        }
+        if (!noText) updateOrder();
     }
 
     private final TextWatcher textChange = new TextWatcher() {
@@ -361,10 +394,12 @@ public class MyActivity extends AppCompatActivity {
         }
         public void onTextChanged(CharSequence s, int start, int before, int count) {
         }
-        //Updates the notification and saves what's in the textboxs
+        //Updates the notification and saves what's in the textboxes
         public void afterTextChanged(Editable s) {
+            System.out.println("The text is " + s.toString());
             updateNotification();
             saveData();
+            if (s.toString().equals("")) updateOrder();
         }
     };
 
