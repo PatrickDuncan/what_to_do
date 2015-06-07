@@ -2,20 +2,15 @@ package pattydiamond.whattodo;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
-import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.NotificationCompat;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
@@ -23,18 +18,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
-import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.TimePicker;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -53,10 +44,9 @@ public class MyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         for (int i=0; i<Text.length; i++) {
-            int editTextId = getResources().getIdentifier("box_"+Integer.toString(i), "id", getPackageName());
-            Text[i] = (EditText)findViewById(editTextId);
+            int editTextId = getResources().getIdentifier("box_" + Integer.toString(i), "id", getPackageName());
+            Text[i] = (EditText) findViewById(editTextId);
         }
-        loadSavedPreferences();
         mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("What To Do?")
@@ -72,6 +62,7 @@ public class MyActivity extends AppCompatActivity {
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent
                 (0, PendingIntent.FLAG_UPDATE_CURRENT);
         mBuilder.setContentIntent(resultPendingIntent);
+        loadSavedPreferences();
         for (EditText aText : Text) {
             aText.addTextChangedListener(textChange);
         }
@@ -168,28 +159,6 @@ public class MyActivity extends AppCompatActivity {
                 alert.create().show();
                 return true;
             }
-            case (R.id.remove): {
-                int hasTexts = 0;
-                String[] s = new String[Text.length];
-                for (EditText aText : Text) {
-                    if (!aText.getText().toString().equals("")) {
-                        s[hasTexts] = aText.getText().toString();
-                        hasTexts++;
-                    }
-                }
-                String[] tasks = Arrays.copyOf(s, hasTexts);
-                alert.setTitle("Select which task.")
-                        .setItems(tasks, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dateDialog(which);
-                            }
-                        });
-                if (showNotification) {
-                    updateNotification();
-                }
-                alert.create().show();
-                return true;
-            }
             case (R.id.theme): {
                 String[] themes = {"Default", "Blue", "Brown", "Green", "Grey", "Orange", "Pink", "Purple", "Red", "Teal"};
                 alert.setTitle("Select a theme")
@@ -214,101 +183,75 @@ public class MyActivity extends AppCompatActivity {
             case (0):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.statusbar));
+                    mBuilder.setColor(getResources().getColor(R.color.actionbar_background));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionbar_background)));
                 break;
             case (1):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.blue700));
+                    mBuilder.setColor(getResources().getColor(R.color.blue500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue500)));
                 break;
             case (2):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.brown700));
+                    mBuilder.setColor(getResources().getColor(R.color.brown500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.brown500)));
                 break;
             case (3):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.green700));
+                    mBuilder.setColor(getResources().getColor(R.color.green500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green500)));
                 break;
             case (4):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.grey700));
+                    mBuilder.setColor(getResources().getColor(R.color.grey500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.grey500)));
                 break;
             case (5):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.orange700));
+                    mBuilder.setColor(getResources().getColor(R.color.orange500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.orange500)));
                 break;
             case (6):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.pink700));
+                    mBuilder.setColor(getResources().getColor(R.color.pink500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.pink500)));
                 break;
             case (7):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.purple700));
+                    mBuilder.setColor(getResources().getColor(R.color.purple500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple500)));
                 break;
             case (8):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.red700));
+                    mBuilder.setColor(getResources().getColor(R.color.red500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red500)));
                 break;
             case (9):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.teal700));
+                    mBuilder.setColor(getResources().getColor(R.color.teal500));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.teal500)));
                 break;
         }
-    }
-
-    private void dateDialog(int which) {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        mSelectedItems = new ArrayList<>();
-        String[] items = {"Time", "Date"};
-        alert.setTitle("Select time and/or date.")
-            .setMultiChoiceItems(items, null, new DialogInterface.OnMultiChoiceClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                    if (isChecked && which==0) {
-                        mSelectedItems.add(which);
-                        DialogFragment newFragment = new TimePickerFragment();
-                        newFragment.show(getSupportFragmentManager(), "timePicker");
-                    } else if (isChecked && which==1) {
-                        mSelectedItems.add(which);
-                        DialogFragment newFragment = new DatePickerFragment();
-                        newFragment.show(getSupportFragmentManager(), "datePicker");
-                    } else if (mSelectedItems.contains(which)) {
-                        mSelectedItems.remove(Integer.valueOf(which));
-                    }
-                }
-            })
-            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-
-                @Override
-                public void onClick(DialogInterface dialog, int id) {
-
-                }
-            })
-            .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int id) {
-
-                }
-            });
-        alert.create().show();
+        if (showNotification) mNotifyMgr.notify(mNotificationId, mBuilder.build());
     }
 
     private void loadSavedPreferences() {
@@ -318,9 +261,7 @@ public class MyActivity extends AppCompatActivity {
         }
         if (sharedPreferences.contains("theme")) {
             colorCase(Integer.parseInt(sharedPreferences.getString("theme", "")));
-        } else {
-            colorCase(0);
-        }
+        } else colorCase(0);
         showNotification = !sharedPreferences.contains("pause") || Boolean.parseBoolean(sharedPreferences.getString("pause", ""));
     }
 
@@ -332,7 +273,7 @@ public class MyActivity extends AppCompatActivity {
     }
 
     private void saveData() {
-        for(int i=0; i<Text.length; i++) {
+        for (int i=0; i<Text.length; i++) {
             savePref("string_text" + Integer.toString(i), Text[i].getText().toString());
         }
     }
@@ -362,7 +303,6 @@ public class MyActivity extends AppCompatActivity {
                 mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
                 mBuilder.setContentText(content);
             }
-            System.out.println(content);
             mNotifyMgr.notify(mNotificationId, mBuilder.build());
         }
     }
@@ -376,12 +316,13 @@ public class MyActivity extends AppCompatActivity {
                 break;
             }
         }
-        //Base cases
+        //Base case
         if (position == -1) return;
         for (int i=position+1;i<Text.length;i++) {
             if (!Text[i].getText().toString().equals("")){
                 Text[position].setText(Text[i].getText());
                 Text[i].setText("");
+                Text[position].setSelection(Text[position].length());
                 noText = false;
                 break;
             }
@@ -394,49 +335,11 @@ public class MyActivity extends AppCompatActivity {
         }
         public void onTextChanged(CharSequence s, int start, int before, int count) {
         }
-        //Updates the notification and saves what's in the textboxes
+        //Updates the notification and saves what's in the text boxes
         public void afterTextChanged(Editable s) {
-            System.out.println("The text is " + s.toString());
             updateNotification();
             saveData();
             if (s.toString().equals("")) updateOrder();
         }
     };
-
-    public static class DatePickerFragment extends DialogFragment
-            implements DatePickerDialog.OnDateSetListener {
-        @NonNull
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            // Use the current date as the default date in the picker
-            final Calendar c = Calendar.getInstance();
-            int year = c.get(Calendar.YEAR);
-            int month = c.get(Calendar.MONTH);
-            int day = c.get(Calendar.DAY_OF_MONTH);
-            return new DatePickerDialog(getActivity(), this, year, month, day);
-        }
-
-        public void onDateSet(DatePicker view, int year, int month, int day) {
-
-        }
-    }
-
-    public static class TimePickerFragment extends DialogFragment
-            implements TimePickerDialog.OnTimeSetListener {
-
-        @NonNull
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            // Use the current time as the default values for the picker
-            final Calendar c = Calendar.getInstance();
-            int hour = c.get(Calendar.HOUR_OF_DAY);
-            int minute = c.get(Calendar.MINUTE);
-            return new TimePickerDialog(getActivity(), this, hour, minute,
-                    DateFormat.is24HourFormat(getActivity()));
-        }
-
-        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-
-        }
-    }
 }
