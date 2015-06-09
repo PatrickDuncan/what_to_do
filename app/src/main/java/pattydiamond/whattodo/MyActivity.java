@@ -1,6 +1,7 @@
 package pattydiamond.whattodo;
 
 import android.annotation.TargetApi;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -8,6 +9,8 @@ import android.app.TaskStackBuilder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.preference.PreferenceManager;
@@ -34,8 +37,9 @@ public class MyActivity extends AppCompatActivity {
     NotificationManager mNotifyMgr;
     private int mNotificationId = 16, checked = 0, before = -1;
     String content, bullet = Html.fromHtml("&#8226").toString() + " ";
-    boolean showNotification;
+    boolean showNotification, clearing = false;
     ArrayList<Integer> mSelectedItems;
+    private Menu menu;
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -78,6 +82,7 @@ public class MyActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_my, menu);
+        this.menu = menu;
         return true;
     }
 
@@ -91,6 +96,7 @@ public class MyActivity extends AppCompatActivity {
                 alert.setMessage("You will be removing all tasks.");
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
+                        clearing = true;
                         for (EditText aText : Text) {
                             aText.setText("");
                         }
@@ -100,6 +106,7 @@ public class MyActivity extends AppCompatActivity {
                         if (showNotification) {
                             mNotifyMgr.notify(mNotificationId, mBuilder.build());
                         }
+                        clearing = false;
                         dialog.cancel();
                     }
                 });
@@ -115,8 +122,10 @@ public class MyActivity extends AppCompatActivity {
                 showNotification = !showNotification;
                 if (showNotification) {
                     updateNotification();
+                    menu.findItem((R.id.pause)).setTitle(R.string.pause);
                 } else {
                     mNotifyMgr.cancel(mNotificationId);
+                    menu.findItem((R.id.pause)).setTitle(R.string.unpause);
                 }
                 savePref("pause", Boolean.toString(showNotification));
                 return true;
@@ -165,7 +174,7 @@ public class MyActivity extends AppCompatActivity {
                         .setItems(themes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                colorCase(which);
+                                colorSelect(which);
                             }
                         });
                 alert.create().show();
@@ -175,15 +184,19 @@ public class MyActivity extends AppCompatActivity {
         return false;
     }
 
-    private void colorCase(int which) {
+    private void colorSelect(int which) {
         ActionBar bar = getSupportActionBar();
         assert bar != null;
         savePref("theme", Integer.toString(which));
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+        ActivityManager.TaskDescription taskDesc = null;
+        String s = getString(R.string.app_name);
         switch (which) {
             case (0):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.statusbar));
                     mBuilder.setColor(getResources().getColor(R.color.actionbar_background));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.recentapps));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionbar_background)));
                 break;
@@ -191,6 +204,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.blue700));
                     mBuilder.setColor(getResources().getColor(R.color.blue500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.blue600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue500)));
                 break;
@@ -198,6 +212,8 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.brown700));
                     mBuilder.setColor(getResources().getColor(R.color.brown500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.brown600));
+
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.brown500)));
                 break;
@@ -205,6 +221,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.green700));
                     mBuilder.setColor(getResources().getColor(R.color.green500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.green600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green500)));
                 break;
@@ -212,6 +229,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.grey700));
                     mBuilder.setColor(getResources().getColor(R.color.grey500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.grey600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.grey500)));
                 break;
@@ -219,6 +237,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.orange700));
                     mBuilder.setColor(getResources().getColor(R.color.orange500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.orange600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.orange500)));
                 break;
@@ -226,6 +245,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.pink700));
                     mBuilder.setColor(getResources().getColor(R.color.pink500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.pink600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.pink500)));
                 break;
@@ -233,6 +253,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.purple700));
                     mBuilder.setColor(getResources().getColor(R.color.purple500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.purple600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple500)));
                 break;
@@ -240,6 +261,7 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.red700));
                     mBuilder.setColor(getResources().getColor(R.color.red500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.red600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.red500)));
                 break;
@@ -247,10 +269,13 @@ public class MyActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     getWindow().setStatusBarColor(getResources().getColor(R.color.teal700));
                     mBuilder.setColor(getResources().getColor(R.color.teal500));
+                    taskDesc = new ActivityManager.TaskDescription(s, bm, getResources().getColor(R.color.teal600));
                 }
                 bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.teal500)));
                 break;
         }
+        assert taskDesc != null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) this.setTaskDescription(taskDesc);
         if (showNotification) mNotifyMgr.notify(mNotificationId, mBuilder.build());
     }
 
@@ -260,8 +285,8 @@ public class MyActivity extends AppCompatActivity {
             Text[i].setText(sharedPreferences.getString("string_text" + Integer.toString(i), ""));
         }
         if (sharedPreferences.contains("theme")) {
-            colorCase(Integer.parseInt(sharedPreferences.getString("theme", "")));
-        } else colorCase(0);
+            colorSelect(Integer.parseInt(sharedPreferences.getString("theme", "")));
+        } else colorSelect(0);
         showNotification = !sharedPreferences.contains("pause") || Boolean.parseBoolean(sharedPreferences.getString("pause", ""));
     }
 
@@ -283,7 +308,10 @@ public class MyActivity extends AppCompatActivity {
             content="";
             for (EditText aText : Text) {
                 if (!aText.getText().toString().equals("")) {
-                    content += bullet + aText.getText().toString();
+                    String text = aText.getText().toString();
+                    if (aText.length() > 17) {
+                        content += bullet + textFix(text);
+                    } else content += bullet + text;
                 }
             }
             String[] s = content.split(bullet);
@@ -305,6 +333,23 @@ public class MyActivity extends AppCompatActivity {
             }
             mNotifyMgr.notify(mNotificationId, mBuilder.build());
         }
+    }
+ 
+    private String textFix(String s) {
+        String fixed = s;
+        int index = 0, count = 0;
+        for (int i=0; i<s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                count = 0;
+                index = i;
+            }
+            else count++;
+            if (count == 17) {
+                fixed = s.substring(0,index+count) + "\n" + s.substring(index+count);
+                count=0;
+            }
+        }
+        return fixed;
     }
 
     private void updateOrder() {
@@ -339,7 +384,7 @@ public class MyActivity extends AppCompatActivity {
         public void afterTextChanged(Editable s) {
             updateNotification();
             saveData();
-            if (s.toString().equals("")) updateOrder();
+            if (s.toString().equals("") && !clearing) updateOrder();
         }
     };
 }

@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">What To Do?</string>
     <string name="edit_task">Enter a task.</string>
-    <string name="pause">Pause Notifications</string>
-    <string name="unpause">UnPause Notifications</string>
+    <string name="pause">Stop Notifications</string>
+    <string name="unpause">Show Notifications</string>
     <string name="clear">Clear All</string>
     <string name="swap">Swap Text</string>
     <string name="remove">Auto Remove</string>

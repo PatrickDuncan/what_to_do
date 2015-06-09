@@ -11,7 +11,7 @@
         android:hint="@string/edit_task"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#FFCDD2"
         android:padding="10dp"/>
     <!--orange-->
@@ -21,7 +21,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#FFE0B2"
         android:padding="10dp"/>
     <!--yellow-->
@@ -31,7 +31,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#FFF9C4"
         android:padding="10dp"/>
     <!--green-->
@@ -41,7 +41,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#C8E6C9"
         android:padding="10dp"/>
     <!--blue-->
@@ -51,7 +51,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#BBDEFB"
         android:padding="10dp"/>
     <!--cyan-->
@@ -61,7 +61,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#B2EBF2"
         android:padding="10dp" />
     <!--purple-->
@@ -71,7 +71,7 @@
         android:layout_height="0dp"
         android:saveEnabled="true"
         android:inputType="textCapSentences"
-        android:maxLength="32"
+        android:maxLength="60"
         android:background="#E1BEE7"
         android:padding="10dp" />
 </LinearLayout>
