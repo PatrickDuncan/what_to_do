@@ -25,7 +25,7 @@ MERGED from com.android.support:support-v4:22.1.1:22:5
 		ADDED from AndroidManifest.xml:6:9
 	android:theme
 		ADDED from AndroidManifest.xml:8:9
-activity#pattydiamond.whattodo.MyActivity
+activity#arbitraryturtle.whattodo.MyActivity
 ADDED from AndroidManifest.xml:9:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:12:13
