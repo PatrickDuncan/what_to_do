@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">What To Do?</string>
+    <string name="app_name1">What To Do</string>
+    <string name="app_name2">What To Do?</string>
     <string name="edit_task">Enter a task.</string>
-    <string name="pause">Stop Notifications</string>
-    <string name="unpause">Show Notifications</string>
+    <string name="pause">Stop Notification</string>
+    <string name="unpause">Show Notification</string>
     <string name="clear">Clear All</string>
     <string name="swap">Swap Text</string>
-    <string name="remove">Auto Remove</string>
     <string name="theme">Select Theme</string>
+    <string name="undo">Undo Clear</string>
 </resources>

@@ -30,20 +30,22 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
 public class MyActivity extends AppCompatActivity {
 
-    EditText[] Text = new EditText[7];
-    NotificationCompat.Builder mBuilder;
-    NotificationManager mNotifyMgr;
+    private EditText[] Text = new EditText[7];
+    private NotificationCompat.Builder mBuilder;
+    private NotificationManager mNotifyMgr;
     private int mNotificationId = 16, checked = 0, before = -1;
-    String content, bullet = Html.fromHtml("&#8226").toString() + " ";
-    boolean showNotification, clearing = false;
-    ArrayList<Integer> mSelectedItems;
+    private String content, bullet = Html.fromHtml("&#8226").toString() + " ";
+    private boolean showNotification, clearing, undoing, undoAble, ordering;
+    private ArrayList<Integer> mSelectedItems;
     private Menu menu;
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        clearing = undoing = undoAble = ordering = false;
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
@@ -51,6 +53,7 @@ public class MyActivity extends AppCompatActivity {
             int editTextId = getResources().getIdentifier("box_" + Integer.toString(i), "id", getPackageName());
             Text[i] = (EditText) findViewById(editTextId);
         }
+        Bitmap large = BitmapFactory.decodeResource(getResources(), R.drawable.notification_iconlarge);
         mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("What To Do?")
@@ -58,6 +61,7 @@ public class MyActivity extends AppCompatActivity {
                 .setOngoing(true)
                 .setShowWhen(false)
                 .setPriority(2);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) mBuilder.setLargeIcon(large);
         mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
         Intent resultIntent = new Intent(this, MyActivity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
@@ -97,6 +101,7 @@ public class MyActivity extends AppCompatActivity {
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         clearing = true;
+                        saveUndo();
                         for (EditText aText : Text) {
                             aText.setText("");
                         }
@@ -180,6 +185,15 @@ public class MyActivity extends AppCompatActivity {
                 alert.create().show();
                 return true;
             }
+            case (R.id.undo): {
+                System.out.println(undoAble);
+                if (undoAble) {
+                    loadUndo();
+                    saveData();
+                    updateNotification();
+                }
+                return true;
+            }
         }
         return false;
     }
@@ -190,7 +204,7 @@ public class MyActivity extends AppCompatActivity {
         savePref("theme", Integer.toString(which));
         Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
         ActivityManager.TaskDescription taskDesc = null;
-        String s = getString(R.string.app_name);
+        String s = getString(R.string.app_name1);
         switch (which) {
             case (0):
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -297,6 +311,25 @@ public class MyActivity extends AppCompatActivity {
         editor.apply();
     }
 
+    public void saveUndo() {
+        System.out.println("Saved UNDO");
+        for (int i=0; i<Text.length; i++) {
+            savePref("undo" + Integer.toString(i), Text[i].getText().toString());
+        }
+        undoAble = true;
+    }
+
+    private void loadUndo() {
+        System.out.println("LOAD UNDO");
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        undoing = true;
+        for (int i = 0; i < Text.length; i++) {
+            Text[i].setText(sharedPreferences.getString("undo"+ Integer.toString(i), ""));
+        }
+        undoing = false;
+        undoAble = false;
+    }
+
     private void saveData() {
         for (int i=0; i<Text.length; i++) {
             savePref("string_text" + Integer.toString(i), Text[i].getText().toString());
@@ -362,7 +395,10 @@ public class MyActivity extends AppCompatActivity {
             }
         }
         //Base case
-        if (position == -1) return;
+        if (position == -1) {
+            ordering = false;
+            return;
+        }
         for (int i=position+1;i<Text.length;i++) {
             if (!Text[i].getText().toString().equals("")){
                 Text[position].setText(Text[i].getText());
@@ -373,18 +409,30 @@ public class MyActivity extends AppCompatActivity {
             }
         }
         if (!noText) updateOrder();
+        ordering = false;
     }
 
     private final TextWatcher textChange = new TextWatcher() {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }
         public void onTextChanged(CharSequence s, int start, int before, int count) {
+            //When you type a single character count-before is 1
+            System.out.println(count +" " +before+" "+ start);
+            if (count-before == 1 && !clearing && !ordering) {
+                System.out.println("reached");
+                undoAble = false;
+            }
         }
         //Updates the notification and saves what's in the text boxes
         public void afterTextChanged(Editable s) {
-            updateNotification();
-            saveData();
-            if (s.toString().equals("") && !clearing) updateOrder();
+            if (!undoing) {
+                updateNotification();
+                saveData();
+                if (s.toString().equals("") && !clearing && !ordering) {
+                    ordering = true;
+                    updateOrder();
+                }
+            }
         }
     };
 }
