@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.preference.PreferenceManager;
@@ -21,19 +22,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
 public class MyActivity extends AppCompatActivity {
 
-    private EditText[] Text = new EditText[7];
+    private EditText[] Text = new EditText[20];
     private NotificationCompat.Builder mBuilder;
     private NotificationManager mNotifyMgr;
     private int mNotificationId = 16, checked = 0, before = -1;
@@ -67,24 +69,58 @@ public class MyActivity extends AppCompatActivity {
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         stackBuilder.addParentStack(MyActivity.class);
         stackBuilder.addNextIntent(resultIntent);
-        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent
-                (0, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
         mBuilder.setContentIntent(resultPendingIntent);
         loadSavedPreferences();
         for (EditText aText : Text) {
             aText.addTextChangedListener(textChange);
         }
         mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        if (showNotification){
-            updateNotification();
-        }
+        if (showNotification) updateNotification();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
     }
 
+    //This gets the int of match_parent in the xml.
+    private int matchParent() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        final int actionbar, height, resourceId, result, screenHeight = size.y, statusBarHeight;
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        actionbar = bar.getHeight();
+        resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        result = getResources().getDimensionPixelSize(resourceId);
+        statusBarHeight = result;
+        height = screenHeight - (statusBarHeight+actionbar);
+        return height;
+    }
+
+    //http://stackoverflow.com/a/24701063/4401223
+    private boolean isTablet() {
+        DisplayMetrics metrics = new DisplayMetrics();
+        this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        float yInches= metrics.heightPixels/metrics.ydpi;
+        float xInches= metrics.widthPixels/metrics.xdpi;
+        double diagonalInches = Math.sqrt(xInches*xInches + yInches*yInches);
+        return diagonalInches >= 6.5;
+    }
+
+    private void fixHeight() {
+        int height = matchParent();
+        if (isTablet())  height /= 10;
+        else height /= 7;
+        for (EditText aText : Text) {
+            aText.setHeight(height);
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        //Height calculation cannot be in onCreate
+        fixHeight();
         getMenuInflater().inflate(R.menu.menu_my, menu);
         this.menu = menu;
         return true;
@@ -108,9 +144,7 @@ public class MyActivity extends AppCompatActivity {
                         saveData();
                         mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(""));
                         mBuilder.setContentText("");
-                        if (showNotification) {
-                            mNotifyMgr.notify(mNotificationId, mBuilder.build());
-                        }
+                        if (showNotification) mNotifyMgr.notify(mNotificationId, mBuilder.build());
                         clearing = false;
                         dialog.cancel();
                     }
