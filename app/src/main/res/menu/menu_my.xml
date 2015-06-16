@@ -1,8 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MyActivity">
     <item android:id="@+id/clear" android:title="@string/clear" />
+    <item android:id="@+id/theme" android:title="@string/theme"/>
     <item android:id="@+id/pause" android:title="@string/pause" />
     <item android:id="@+id/swap" android:title="@string/swap" />
-    <item android:id="@+id/theme" android:title="@string/theme"/>
     <item android:id="@+id/undo" android:title="@string/undo"/>
 </menu>
