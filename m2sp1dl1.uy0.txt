@@ -1,0 +1,20 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .idea/gradle.xml
+#	modified:   .idea/misc.xml
+#	modified:   .idea/modules.xml
+#	new file:   .idea/runConfigurations.xml
+#	modified:   WhatToDo.iml
+#	modified:   app/app-release.apk
+#	modified:   app/app.iml
+#	modified:   app/build.gradle
+#	modified:   app/manifest-merger-release-report.txt
+#	modified:   app/src/main/res/layout/activity_my.xml
+#	new file:   signature.jks
+#
+

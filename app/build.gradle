@@ -8,8 +8,8 @@ android {
         applicationId "arbitraryturtle.whattodo"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 4
-        versionName "1.1.1"
+        versionCode 6
+        versionName "1.1.3"
     }
     buildTypes {
         release {
