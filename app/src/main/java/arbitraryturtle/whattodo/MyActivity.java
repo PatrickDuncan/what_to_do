@@ -123,6 +123,11 @@ public class MyActivity extends AppCompatActivity {
         fixHeight();
         getMenuInflater().inflate(R.menu.menu_my, menu);
         this.menu = menu;
+        if (showNotification) {
+            menu.findItem((R.id.pause)).setTitle(R.string.pause);
+        } else {
+            menu.findItem((R.id.pause)).setTitle(R.string.unpause);
+        }
         return true;
     }
 
