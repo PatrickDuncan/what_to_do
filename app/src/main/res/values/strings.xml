@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name1">What To Do</string>
-    <string name="app_name2">What To Do?</string>
+    <string name="app_name1">What to Do</string>
+    <string name="app_name2">What to Do?</string>
     <string name="edit_task">Enter a task.</string>
     <string name="pause">Stop Notification</string>
     <string name="unpause">Show Notification</string>
