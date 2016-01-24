@@ -35,7 +35,7 @@ import java.util.Arrays;
 
 public class MyActivity extends AppCompatActivity {
 
-    private EditText[] Text = new EditText[20];
+    private EditText[] Text = new EditText[40];
     private NotificationCompat.Builder mBuilder;
     private NotificationManager mNotifyMgr;
     private int mNotificationId = 16, checked = 0, before = -1;
@@ -58,7 +58,7 @@ public class MyActivity extends AppCompatActivity {
         Bitmap large = BitmapFactory.decodeResource(getResources(), R.drawable.notification_iconlarge);
         mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
-                .setContentTitle("What To Do?")
+                .setContentTitle("What to Do?")
                 .setContentText(Text[0].getText().toString())
                 .setOngoing(true)
                 .setShowWhen(false)
@@ -79,6 +79,11 @@ public class MyActivity extends AppCompatActivity {
         if (showNotification) updateNotification();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        }
+        // If all the text boxes are empty, then cancel the notification
+        if(allEmpty()) {
+            mNotifyMgr.cancel(mNotificationId);
+            savePref("pause", Boolean.toString(showNotification));
         }
     }
 
@@ -108,6 +113,7 @@ public class MyActivity extends AppCompatActivity {
         return diagonalInches >= 6.5;
     }
 
+    // Corrects the size of each text box
     private void fixHeight() {
         int height = matchParent();
         if (isTablet())  height /= 10;
@@ -131,6 +137,7 @@ public class MyActivity extends AppCompatActivity {
         return true;
     }
 
+    // Creates the options menu and has the options' implementations
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
@@ -147,9 +154,6 @@ public class MyActivity extends AppCompatActivity {
                             aText.setText("");
                         }
                         saveData();
-                        mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(""));
-                        mBuilder.setContentText("");
-                        if (showNotification) mNotifyMgr.notify(mNotificationId, mBuilder.build());
                         clearing = false;
                         dialog.cancel();
                     }
@@ -236,6 +240,7 @@ public class MyActivity extends AppCompatActivity {
         return false;
     }
 
+    // Change the colour of the app
     private void colorSelect(int which) {
         ActionBar bar = getSupportActionBar();
         assert bar != null;
@@ -328,9 +333,10 @@ public class MyActivity extends AppCompatActivity {
         }
         assert taskDesc != null;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) this.setTaskDescription(taskDesc);
-        if (showNotification) mNotifyMgr.notify(mNotificationId, mBuilder.build());
+        if (showNotification && !allEmpty()) mNotifyMgr.notify(mNotificationId, mBuilder.build());
     }
 
+    // Loads the saved content, ie the text content, theme colour and if the notification is paused
     private void loadSavedPreferences() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         for (int i = 0; i < Text.length; i++) {
@@ -342,6 +348,7 @@ public class MyActivity extends AppCompatActivity {
         showNotification = !sharedPreferences.contains("pause") || Boolean.parseBoolean(sharedPreferences.getString("pause", ""));
     }
 
+    // Save the current parameters
     private void savePref(String key, String value) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -349,6 +356,7 @@ public class MyActivity extends AppCompatActivity {
         editor.apply();
     }
 
+    // Save text contents before removing, so that the user can recover their tasks
     public void saveUndo() {
         for (int i=0; i<Text.length; i++) {
             savePref("undo" + Integer.toString(i), Text[i].getText().toString());
@@ -356,25 +364,28 @@ public class MyActivity extends AppCompatActivity {
         undoAble = true;
     }
 
+    // Restore the content that they cleared.
     private void loadUndo() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         undoing = true;
         for (int i = 0; i < Text.length; i++) {
-            Text[i].setText(sharedPreferences.getString("undo"+ Integer.toString(i), ""));
+            Text[i].setText(sharedPreferences.getString("undo" + Integer.toString(i), ""));
         }
         undoing = false;
         undoAble = false;
     }
 
+    // Save the text boxes content
     private void saveData() {
         for (int i=0; i<Text.length; i++) {
             savePref("string_text" + Integer.toString(i), Text[i].getText().toString());
         }
     }
 
+    // Update the notification after a content change
     private void updateNotification() {
         if (showNotification) {
-            content="";
+            content = "";
             for (EditText aText : Text) {
                 if (!aText.getText().toString().equals("")) {
                     String text = aText.getText().toString();
@@ -400,10 +411,17 @@ public class MyActivity extends AppCompatActivity {
                 mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
                 mBuilder.setContentText(content);
             }
-            mNotifyMgr.notify(mNotificationId, mBuilder.build());
+            if (!allEmpty())
+                mNotifyMgr.notify(mNotificationId, mBuilder.build());
+            else {
+                // Do not create a notification if there's nothing to show
+                mNotifyMgr.cancel(mNotificationId);
+                savePref("pause", Boolean.toString(showNotification));
+            }
         }
     }
- 
+
+    // Fixes the appearance of a bullet point in the notification
     private String textFix(String s) {
         String fixed = s;
         int index = 0, count = 0;
@@ -413,6 +431,7 @@ public class MyActivity extends AppCompatActivity {
                 index = i;
             }
             else count++;
+            // more than 16 characters might cause a new line glitch
             if (count == 17) {
                 fixed = s.substring(0,index+count) + "\n" + s.substring(index+count);
                 count=0;
@@ -421,6 +440,7 @@ public class MyActivity extends AppCompatActivity {
         return fixed;
     }
 
+    // If there's empty text boxes above content, more the content to the top.
     private void updateOrder() {
         int position = -1;
         boolean noText = true;
@@ -430,7 +450,7 @@ public class MyActivity extends AppCompatActivity {
                 break;
             }
         }
-        //Base case
+        //Base case -> There's content, backtrack
         if (position == -1) {
             ordering = false;
             return;
@@ -448,6 +468,17 @@ public class MyActivity extends AppCompatActivity {
         ordering = false;
     }
 
+    // If every text box is empty
+    private boolean allEmpty() {
+        for (EditText aText : Text) {
+            if (!aText.getText().toString().equals("")) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Functions that trigger when a text box changes in any way
     private final TextWatcher textChange = new TextWatcher() {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }
@@ -457,7 +488,7 @@ public class MyActivity extends AppCompatActivity {
                 undoAble = false;
             }
         }
-        //Updates the notification and saves what's in the text boxes
+        // Updates the notification and saves what's in the text boxes
         public void afterTextChanged(Editable s) {
             if (!undoing) {
                 updateNotification();
