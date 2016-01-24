@@ -26,6 +26,8 @@ import android.view.View.OnFocusChangeListener;
 import android.view.View.OnTouchListener;
 import android.widget.EditText;
 
+// Edited class from a Github user, link found above
+
 public class ClearableEditText extends EditText implements OnTouchListener,
         OnFocusChangeListener, TextWatcherListener {
 
@@ -100,8 +102,6 @@ public class ClearableEditText extends EditText implements OnTouchListener,
     public void onFocusChange(View v, boolean hasFocus) {
         if (hasFocus) {
             setClearIconVisible(!isEmpty(getText()));
-        } else {
-            setClearIconVisible(false);
         }
         if (f != null) {
             f.onFocusChange(v, hasFocus);
@@ -110,9 +110,7 @@ public class ClearableEditText extends EditText implements OnTouchListener,
 
     @Override
     public void onTextChanged(EditText view, String text) {
-        if (isFocused()) {
             setClearIconVisible(!isEmpty(text));
-        }
     }
 
     private void init() {

@@ -155,6 +155,7 @@ public class MyActivity extends AppCompatActivity {
                         }
                         saveData();
                         clearing = false;
+                        Text[0].requestFocus();     // Set the focus back to the top of the app
                         dialog.cancel();
                     }
                 });
