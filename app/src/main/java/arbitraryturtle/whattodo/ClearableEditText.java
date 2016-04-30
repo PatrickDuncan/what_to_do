@@ -81,7 +81,7 @@ public class ClearableEditText extends EditText implements OnTouchListener,
                     .getIntrinsicWidth());
             if (tappedX) {
                 if (event.getAction() == MotionEvent.ACTION_UP) {
-                    MyActivity ma = (MyActivity) getContext();
+                    Main ma = (Main) getContext();
                     ma.saveUndo();
                     setText("");
                     if (listener != null) {

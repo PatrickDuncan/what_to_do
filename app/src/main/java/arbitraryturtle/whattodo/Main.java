@@ -14,9 +14,9 @@ import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
-import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -29,21 +29,29 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class MyActivity extends AppCompatActivity {
+public class Main extends AppCompatActivity {
+
+    private int mNotificationId = 16;
+    private int checked = 0;
+    private boolean showNotification, clearing, undoing, undoAble, ordering;
+    private String content, bullet = Html.fromHtml("&#8226").toString() + " ";
 
     private EditText[] Text = new EditText[40];
     private NotificationCompat.Builder mBuilder;
     private NotificationManager mNotifyMgr;
-    private int mNotificationId = 16, checked = 0, before = -1;
-    private String content, bullet = Html.fromHtml("&#8226").toString() + " ";
-    private boolean showNotification, clearing, undoing, undoAble, ordering;
     private ArrayList<Integer> mSelectedItems;
     private Menu menu;
 
+    /**
+     * Initially invoked method
+     *
+     * @param savedInstanceState
+     */
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +59,12 @@ public class MyActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        for (int i=0; i<Text.length; i++) {
+
+        for (int i = 0; i < Text.length; i++) {
             int editTextId = getResources().getIdentifier("box_" + Integer.toString(i), "id", getPackageName());
             Text[i] = (EditText) findViewById(editTextId);
         }
+
         Bitmap large = BitmapFactory.decodeResource(getResources(), R.drawable.notification_iconlarge);
         mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
@@ -63,81 +73,57 @@ public class MyActivity extends AppCompatActivity {
                 .setOngoing(true)
                 .setShowWhen(false)
                 .setPriority(2);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) mBuilder.setLargeIcon(large);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
+            mBuilder.setLargeIcon(large);
         mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
-        Intent resultIntent = new Intent(this, MyActivity.class);
+
+        Intent resultIntent = new Intent(this, Main.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        stackBuilder.addParentStack(MyActivity.class);
+        stackBuilder.addParentStack(Main.class);
         stackBuilder.addNextIntent(resultIntent);
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
         mBuilder.setContentIntent(resultPendingIntent);
+
         loadSavedPreferences();
-        for (EditText aText : Text) {
+
+        for (EditText aText : Text)
             aText.addTextChangedListener(textChange);
-        }
         mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (showNotification) updateNotification();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        }
         // If all the text boxes are empty, then cancel the notification
-        if(allEmpty()) {
+        if (noTasks()) {
             mNotifyMgr.cancel(mNotificationId);
             savePref("pause", Boolean.toString(showNotification));
         }
     }
 
-    //This gets the int of match_parent in the xml.
-    private int matchParent() {
-        Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        final int actionbar, height, resourceId, result, screenHeight = size.y, statusBarHeight;
-        ActionBar bar = getSupportActionBar();
-        assert bar != null;
-        actionbar = bar.getHeight();
-        resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-        result = getResources().getDimensionPixelSize(resourceId);
-        statusBarHeight = result;
-        height = screenHeight - (statusBarHeight+actionbar);
-        return height;
-    }
-
-    //http://stackoverflow.com/a/24701063/4401223
-    private boolean isTablet() {
-        DisplayMetrics metrics = new DisplayMetrics();
-        this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        float yInches= metrics.heightPixels/metrics.ydpi;
-        float xInches= metrics.widthPixels/metrics.xdpi;
-        double diagonalInches = Math.sqrt(xInches*xInches + yInches*yInches);
-        return diagonalInches >= 6.5;
-    }
-
-    // Corrects the size of each text box
-    private void fixHeight() {
-        int height = matchParent();
-        if (isTablet())  height /= 10;
-        else height /= 7;
-        for (EditText aText : Text) {
-            aText.setHeight(height);
-        }
-    }
-
+    /**
+     * Invoked when the options menu is to be created on startup
+     *
+     * @param menu The menu object
+     * @return If it has been created
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Height calculation cannot be in onCreate
         fixHeight();
         getMenuInflater().inflate(R.menu.menu_my, menu);
         this.menu = menu;
-        if (showNotification) {
+        if (showNotification)
             menu.findItem((R.id.pause)).setTitle(R.string.pause);
-        } else {
+        else
             menu.findItem((R.id.pause)).setTitle(R.string.unpause);
-        }
         return true;
     }
 
-    // Creates the options menu and has the options' implementations
+    /**
+     * Creates the options menu and has the options' implementations
+     *
+     * @param item the menu item selected by the end user
+     * @return if the options menu did its job
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
@@ -150,9 +136,8 @@ public class MyActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         clearing = true;
                         saveUndo();
-                        for (EditText aText : Text) {
+                        for (EditText aText : Text)
                             aText.setText("");
-                        }
                         saveData();
                         clearing = false;
                         Text[0].requestFocus();     // Set the focus back to the top of the app
@@ -180,41 +165,53 @@ public class MyActivity extends AppCompatActivity {
                 return true;
             }
             case (R.id.swap): {
-                int hasTexts = 0;
+                int hasTexts = 0, i = 0;
+                int[] indexes = new int[Text.length];
                 String[] s = new String[Text.length];
                 mSelectedItems = new ArrayList<>();
                 for (EditText aText : Text) {
                     if (!aText.getText().toString().equals("")) {
                         s[hasTexts] = aText.getText().toString();
+                        indexes[hasTexts] = i;
                         hasTexts++;
                     }
+                    i++;
                 }
                 String[] tasks = Arrays.copyOf(s, hasTexts);
-                alert.setTitle("Swap which?")
-                        .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                                if (isChecked) {
-                                    mSelectedItems.add(which);
-                                    if (before == -1) before = which;
-                                    checked++;
-                                } else if (mSelectedItems.contains(which)) {
-                                    mSelectedItems.remove(Integer.valueOf(which));
-                                    checked--;
-                                    before = -1;
+                // No need to prompt for selection if there's only 2 tasks to be swapped.
+                if (tasks.length == 2) {
+                    Editable text0 = Text[indexes[0]].getText();
+                    Text[indexes[0]].setText(Text[indexes[1]].getText());
+                    Text[indexes[1]].setText(text0);
+                }
+                // Can't swap 0 or 1 tasks
+                else if (tasks.length != 0 && tasks.length != 1) {
+                    alert.setTitle("Swap which?")
+                            .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                                    int before = -1;
+                                    if (isChecked) {
+                                        mSelectedItems.add(which);
+                                        before = which;
+                                        checked++;
+                                    } else if (mSelectedItems.contains(which)) {
+                                        mSelectedItems.remove(Integer.valueOf(which));
+                                        checked--;
+                                        before = -1;
+                                    }
+                                    if (checked == 2) {
+                                        Editable text0 = Text[before].getText();
+                                        Text[before].setText(Text[which].getText());
+                                        Text[which].setText(text0);
+                                        checked = 0;
+                                        //Data is saved in the text changed listener
+                                        dialog.cancel();
+                                    }
                                 }
-                                if (checked == 2) {
-                                    Editable text0 = Text[before].getText();
-                                    Text[before].setText(Text[which].getText());
-                                    Text[which].setText(text0);
-                                    checked = 0;
-                                    before = -1;
-                                    //Data is saved in the text changed listener
-                                    dialog.cancel();
-                                }
-                            }
-                        });
-                alert.create().show();
+                            });
+                    alert.create().show();
+                }
                 return true;
             }
             case (R.id.theme): {
@@ -241,7 +238,19 @@ public class MyActivity extends AppCompatActivity {
         return false;
     }
 
-    // Change the colour of the app
+    /**
+     * @return if there are currently no tasks
+     */
+    private boolean noTasks() {
+        for (EditText aText : Text)
+            if (!aText.getText().toString().equals(""))
+                return false;
+        return true;
+    }
+
+    /**
+     * Change the colour of the app
+     */
     private void colorSelect(int which) {
         ActionBar bar = getSupportActionBar();
         assert bar != null;
@@ -333,11 +342,39 @@ public class MyActivity extends AppCompatActivity {
                 break;
         }
         assert taskDesc != null;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) this.setTaskDescription(taskDesc);
-        if (showNotification && !allEmpty()) mNotifyMgr.notify(mNotificationId, mBuilder.build());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+            this.setTaskDescription(taskDesc);
+        if (showNotification && !noTasks())
+            mNotifyMgr.notify(mNotificationId, mBuilder.build());
     }
 
-    // Loads the saved content, ie the text content, theme colour and if the notification is paused
+    /**
+     * Corrects the size of each text box
+     */
+    private void fixHeight() {
+        int height = matchParent();
+        if (isTablet()) height /= 10;
+        else height /= 7;
+        for (EditText aText : Text)
+            aText.setHeight(height);
+    }
+
+    /**
+     * http://stackoverflow.com/a/24701063/4401223
+     * Checks whether the current device is has a tablet screen size
+     */
+    private boolean isTablet() {
+        DisplayMetrics metrics = new DisplayMetrics();
+        this.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        float yInches = metrics.heightPixels / metrics.ydpi;
+        float xInches = metrics.widthPixels / metrics.xdpi;
+        double diagonalInches = Math.sqrt(xInches * xInches + yInches * yInches);
+        return diagonalInches >= 6.5;
+    }
+
+    /**
+     * Loads the saved content, ie the text content, theme colour and if the notification is paused
+     */
     private void loadSavedPreferences() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         for (int i = 0; i < Text.length; i++) {
@@ -349,7 +386,39 @@ public class MyActivity extends AppCompatActivity {
         showNotification = !sharedPreferences.contains("pause") || Boolean.parseBoolean(sharedPreferences.getString("pause", ""));
     }
 
-    // Save the current parameters
+    /**
+     * Restore the content that they cleared.
+     */
+    private void loadUndo() {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        undoing = true;
+        for (int i = 0; i < Text.length; i++)
+            Text[i].setText(sharedPreferences.getString("undo" + Integer.toString(i), ""));
+        undoing = false;
+        undoAble = false;
+    }
+
+    /**
+     * This gets the int of match_parent in the xml.
+     */
+    private int matchParent() {
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        final int actionbar, height, resourceId, result, screenHeight = size.y, statusBarHeight;
+        ActionBar bar = getSupportActionBar();
+        assert bar != null;
+        actionbar = bar.getHeight();
+        resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        result = getResources().getDimensionPixelSize(resourceId);
+        statusBarHeight = result;
+        height = screenHeight - (statusBarHeight + actionbar);
+        return height;
+    }
+
+    /**
+     * Save the current parameters
+     */
     private void savePref(String key, String value) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -357,139 +426,50 @@ public class MyActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    // Save text contents before removing, so that the user can recover their tasks
+    /**
+     * Save text contents before removing, so that the user can recover their tasks
+     */
     public void saveUndo() {
-        for (int i=0; i<Text.length; i++) {
+        for (int i = 0; i < Text.length; i++)
             savePref("undo" + Integer.toString(i), Text[i].getText().toString());
-        }
         undoAble = true;
     }
 
-    // Restore the content that they cleared.
-    private void loadUndo() {
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        undoing = true;
-        for (int i = 0; i < Text.length; i++) {
-            Text[i].setText(sharedPreferences.getString("undo" + Integer.toString(i), ""));
-        }
-        undoing = false;
-        undoAble = false;
-    }
-
-    // Save the text boxes content
+    /**
+     * Save the text boxes content
+     */
     private void saveData() {
-        for (int i=0; i<Text.length; i++) {
+        for (int i = 0; i < Text.length; i++)
             savePref("string_text" + Integer.toString(i), Text[i].getText().toString());
-        }
     }
 
-    // Update the notification after a content change
-    private void updateNotification() {
-        if (showNotification) {
-            content = "";
-            for (EditText aText : Text) {
-                if (!aText.getText().toString().equals("")) {
-                    String text = aText.getText().toString();
-                    if (aText.length() > 17) {
-                        content += bullet + textFix(text);
-                    } else content += bullet + text;
-                }
-            }
-            String[] s = content.split(bullet);
-            if (s.length > 1) {
-                mBuilder.setContentText(s[1]);
-            }
-            content = "";
-            for (int i=1; i<s.length-1; i++){
-                s[i] = bullet + s[i] + "\n";
-                content += s[i];
-            }
-            if (s.length > 2) {
-                content += bullet + s[s.length - 1];
-                mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
-            } else {
-                content += s[s.length - 1];
-                mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
-                mBuilder.setContentText(content);
-            }
-            if (!allEmpty())
-                mNotifyMgr.notify(mNotificationId, mBuilder.build());
-            else {
-                // Do not create a notification if there's nothing to show
-                mNotifyMgr.cancel(mNotificationId);
-                savePref("pause", Boolean.toString(showNotification));
-            }
-        }
-    }
-
-    // Fixes the appearance of a bullet point in the notification
-    private String textFix(String s) {
-        String fixed = s;
-        int index = 0, count = 0;
-        for (int i=0; i<s.length(); i++) {
-            if (s.charAt(i) == ' ') {
-                count = 0;
-                index = i;
-            }
-            else count++;
-            // more than 16 characters might cause a new line glitch
-            if (count == 17) {
-                fixed = s.substring(0,index+count) + "\n" + s.substring(index+count);
-                count=0;
-            }
-        }
-        return fixed;
-    }
-
-    // If there's empty text boxes above content, more the content to the top.
-    private void updateOrder() {
-        int position = -1;
-        boolean noText = true;
-        for (int i=0;i<Text.length;i++) {
-            if (Text[i].getText().toString().equals("")){
-                position = i;
-                break;
-            }
-        }
-        //Base case -> There's content, backtrack
-        if (position == -1) {
-            ordering = false;
-            return;
-        }
-        for (int i=position+1;i<Text.length;i++) {
-            if (!Text[i].getText().toString().equals("")){
-                Text[position].setText(Text[i].getText());
-                Text[i].setText("");
-                Text[position].setSelection(Text[position].length());
-                noText = false;
-                break;
-            }
-        }
-        if (!noText) updateOrder();
-        ordering = false;
-    }
-
-    // If every text box is empty
-    private boolean allEmpty() {
-        for (EditText aText : Text) {
-            if (!aText.getText().toString().equals("")) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // Functions that trigger when a text box changes in any way
+    /**
+     * Functions that trigger when a text box changes in any way
+     */
     private final TextWatcher textChange = new TextWatcher() {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }
+
+        /**
+         * This method is called to notify you that, within s, the count characters beginning at
+         * start have just replaced old text that had length before.
+         *
+         * @param s what was in the edittext
+         * @param start the starting index of the substring within s
+         * @param before the length of the string that has been replaced
+         * @param count the number of characters that have replaced the old text
+         */
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-            //When you type a single character count-before is 1
-            if (count-before == 1 && !clearing && !ordering) {
+            // When you type a single character count-before is 1
+            if (count - before == 1 && !clearing && !ordering)
                 undoAble = false;
-            }
         }
-        // Updates the notification and saves what's in the text boxes
+
+        /**
+         * This method is called to notify you that, somewhere within s, the text has been changed
+         * Updates the notification and saves what's in the text boxes
+         * @param s the edittext that was changed
+         */
         public void afterTextChanged(Editable s) {
             if (!undoing) {
                 updateNotification();
@@ -501,4 +481,97 @@ public class MyActivity extends AppCompatActivity {
             }
         }
     };
+
+    /**
+     * Fixes the appearance of a bullet point in the notification
+     */
+    private String textFix(String s) {
+        String fixed = s;
+        int index = 0, count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                count = 0;
+                index = i;
+            } else
+                count++;
+            // more than 16 characters might cause a new line glitch
+            if (count == 17) {
+                fixed = s.substring(0, index + count) + "\n" + s.substring(index + count);
+                count = 0;
+            }
+        }
+        return fixed;
+    }
+
+    /**
+     * Update the notification after a content change
+     */
+    private void updateNotification() {
+        if (showNotification) {
+            content = "";
+            for (EditText aText : Text) {
+                if (!aText.getText().toString().equals("")) {
+                    String text = aText.getText().toString();
+                    if (aText.length() > 17)
+                        content += bullet + textFix(text);
+                    else
+                        content += bullet + text;
+                }
+            }
+            String[] s = content.split(bullet);
+            if (s.length > 1)
+                mBuilder.setContentText(s[1]);
+            content = "";
+            for (int i = 1; i < s.length - 1; i++) {
+                s[i] = bullet + s[i] + "\n";
+                content += s[i];
+            }
+            if (s.length > 2) {
+                content += bullet + s[s.length - 1];
+                mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
+            } else {
+                content += s[s.length - 1];
+                mBuilder.setStyle(new NotificationCompat.BigTextStyle().bigText(content));
+                mBuilder.setContentText(content);
+            }
+            if (!noTasks())
+                mNotifyMgr.notify(mNotificationId, mBuilder.build());
+            else {
+                // Do not create a notification if there's nothing to show
+                mNotifyMgr.cancel(mNotificationId);
+                savePref("pause", Boolean.toString(showNotification));
+            }
+        }
+    }
+
+    /**
+     * If there's empty text boxes above content, more the content to the top.
+     */
+    private void updateOrder() {
+        int position = -1;
+        boolean noText = true;
+        for (int i = 0; i < Text.length; i++) {
+            if (Text[i].getText().toString().equals("")) {
+                position = i;
+                break;
+            }
+        }
+        //Base case -> There's content, backtrack
+        if (position == -1) {
+            ordering = false;
+            return;
+        }
+        for (int i = position + 1; i < Text.length; i++) {
+            if (!Text[i].getText().toString().equals("")) {
+                Text[position].setText(Text[i].getText());
+                Text[i].setText("");
+                Text[position].setSelection(Text[position].length());
+                noText = false;
+                break;
+            }
+        }
+        if (!noText)
+            updateOrder();
+        ordering = false;
+    }
 }
