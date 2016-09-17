@@ -38,6 +38,7 @@ public class Main extends AppCompatActivity {
 
     private int mNotificationId = 16;
     private int checked = 0;
+    private int before = -1;
     private boolean showNotification, clearing, undoing, undoAble, ordering;
     private String content, bullet = Html.fromHtml("&#8226").toString() + " ";
 
@@ -111,10 +112,7 @@ public class Main extends AppCompatActivity {
         fixHeight();
         getMenuInflater().inflate(R.menu.menu_my, menu);
         this.menu = menu;
-        if (showNotification)
-            menu.findItem((R.id.pause)).setTitle(R.string.pause);
-        else
-            menu.findItem((R.id.pause)).setTitle(R.string.unpause);
+        menu.findItem((R.id.pause)).setTitle(showNotification ? R.string.pause : R.string.unpause);
         return true;
     }
 
@@ -134,14 +132,14 @@ public class Main extends AppCompatActivity {
                 alert.setMessage("You will be removing all tasks.");
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        clearing = true;
-                        saveUndo();
-                        for (EditText aText : Text)
-                            aText.setText("");
-                        saveData();
-                        clearing = false;
-                        Text[0].requestFocus();     // Set the focus back to the top of the app
-                        dialog.cancel();
+                    clearing = true;
+                    saveUndo();
+                    for (EditText aText : Text)
+                        aText.setText("");
+                    saveData();
+                    clearing = false;
+                    Text[0].requestFocus();     // Set the focus back to the top of the app
+                    dialog.cancel();
                     }
                 });
                 alert.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
@@ -187,29 +185,31 @@ public class Main extends AppCompatActivity {
                 // Can't swap 0 or 1 tasks
                 else if (tasks.length != 0 && tasks.length != 1) {
                     alert.setTitle("Swap which?")
-                            .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                                    int before = -1;
-                                    if (isChecked) {
-                                        mSelectedItems.add(which);
-                                        before = which;
-                                        checked++;
-                                    } else if (mSelectedItems.contains(which)) {
-                                        mSelectedItems.remove(Integer.valueOf(which));
-                                        checked--;
-                                        before = -1;
-                                    }
-                                    if (checked == 2) {
-                                        Editable text0 = Text[before].getText();
-                                        Text[before].setText(Text[which].getText());
-                                        Text[which].setText(text0);
-                                        checked = 0;
-                                        //Data is saved in the text changed listener
-                                        dialog.cancel();
-                                    }
+                        .setMultiChoiceItems(tasks, null, new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                                if (isChecked) {
+                                    mSelectedItems.add(which);
+                                    if (before == -1) before = which;
+                                    checked++;
+                                } else if (mSelectedItems.contains(which)) {
+                                    mSelectedItems.remove(Integer.valueOf(which));
+                                    checked--;
+                                    before = -1;
                                 }
-                            });
+                                if (checked == 2) {
+                                    System.out.println(Text[before].getText() + " " + Text[which].getText());
+                                    Editable text0 = Text[before].getText();
+                                    Text[before].setText(Text[which].getText());
+                                    Text[which].setText(text0);
+                                    System.out.println(Text[before].getText() + " " + Text[which].getText());
+                                    checked = 0;
+                                    before = -1;
+                                    //Data is saved in the text changed listener
+                                    dialog.cancel();
+                                }
+                            }
+                        });
                     alert.create().show();
                 }
                 return true;
@@ -217,12 +217,12 @@ public class Main extends AppCompatActivity {
             case (R.id.theme): {
                 String[] themes = {"Default", "Blue", "Brown", "Green", "Grey", "Orange", "Pink", "Purple", "Red", "Teal"};
                 alert.setTitle("Select a theme")
-                        .setItems(themes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                colorSelect(which);
-                            }
-                        });
+                    .setItems(themes, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            colorSelect(which);
+                        }
+                    });
                 alert.create().show();
                 return true;
             }
