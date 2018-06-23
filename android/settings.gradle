@@ -1,0 +1,3 @@
+rootProject.name = 'what_to_do'
+
+include ':app'
