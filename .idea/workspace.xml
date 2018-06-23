@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21ef83e1-1761-4d1a-9cca-3149c0ad6057" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.babelrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.watchmanconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App.test.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileChanges/last-build.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileContent/fileContent.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/javaCompile/taskJars.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/cache.properties" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_android_support_support_annotations_23_0_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_android_support_support_v4_23_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fbui_textlayoutbuilder_staticlayout_proxy_1_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fbui_textlayoutbuilder_textlayoutbuilder_1_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_drawee_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_fbcore_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_fresco_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_base_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_fresco_imagepipeline_okhttp3_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_react_react_native_0_55_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_facebook_soloader_soloader_0_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_parse_bolts_bolts_tasks_1_4_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_6_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_urlconnection_3_6_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__org_webkit_android_jsc_r174650.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/android/app/BUCK" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/app.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" afterPath="$PROJECT_DIR$/android/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/debug/com/what_to_do/BuildConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/android/support/v4/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/drawee/backends/pipeline/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/fbcore/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/fbui/textlayoutbuilder/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/imagepipeline/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/imagepipeline/backends/okhttp3/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/imagepipelinebase/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/react/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/facebook/soloader/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/com/what_to_do/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/debug/org/webkit/android_jsc/R.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ar.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-az-rAZ.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-bg.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-bn-rBD.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ca.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-cs.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-da.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-de.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-el.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-es.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-et-rEE.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-eu-rES.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-fa.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-fi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-gl-rES.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-gu-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-h720dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-hdpi-v4.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-hi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-hr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-hu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-hy-rAM.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-in.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-is-rIS.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-it.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-iw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ja.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ka-rGE.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-kk-rKZ.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-km-rKH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-kn-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ko.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ky-rKG.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-land.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-large-v4.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-lo-rLA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-lt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-lv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-mk-rMK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ml-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-mn-rMN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-mr-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ms-rMY.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-my-rMM.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-nb.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ne-rNP.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-nl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-pa-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-pl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-port.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ro.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ru.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-si-rLK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sq-rAL.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ta-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-te-rIN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-th.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-tl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-tr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-uk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-ur-rPK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-uz-rUZ.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v11.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v12.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v14.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v17.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v18.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v21.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v22.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-v23.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-vi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-w360dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-w480dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-w500dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-w600dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-w720dp-v13.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-land-v4.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-v4.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v4/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$attr.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$id.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$attr.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$id.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/fbcore/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/fbui/textlayoutbuilder/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/fbui/textlayoutbuilder/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/imagepipeline/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/imagepipeline/backends/okhttp3/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/imagepipelinebase/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$anim.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$attr.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$bool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$color.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$dimen.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$drawable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$id.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$integer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$layout.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$string.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$style.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$xml.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/soloader/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/BuildConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/MainActivity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/MainApplication$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/MainApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$anim.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$attr.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$bool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$color.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$dimen.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$drawable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$id.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$integer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$layout.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$mipmap.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$string.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$style.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$styleable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R$xml.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/what_to_do/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/org/webkit/android_jsc/R.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/0LvqsbRv16xGk4lZ4SVOuGpUcL4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1_4xTmJLm9y8KaOfx2fAMlQYwF4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/1sNuWr3s6zhK17UwE4OwBT7z+ZU=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/31lZxF2R8puLVE_qqflHW3abEHk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/5PSam5NckBN0SzvpFee5W85j_Zg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6nSGftvoZ5qWtKStwy4vKXPUk18=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/EGXXORmxonQMShBbzfuyqxnuCZY=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/GontoumL8pvvPMaXFnmI_ghucj4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Hd8MSSoaAcU8Wsa+Zan1n9CS1Cs=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IMJpNpdIEs3fdxpz25tK59XywiI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/M69GW1ggbjweWlxKaE5SNGXc1qA=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/OEIGWNwIivGqiVdsiFLtSAhrJU4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/QSDca5pM252caXPwEhczdF6Shtg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VPORzuYkpaVXzRXcDx9Uly14O0E=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/WITFgDUwudbZQ54TTdtsonHQNOI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Z3xLzXB8IBN1rVyOEKX+q5lyI6c=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/bxkzxV9ougYk7j9o+MFTNsxhqRM=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/knfSkmr8ZW8LMcbazS0xlrW59u0=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rP+IVICi+p_58DTAuih0KcdcJjI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tbmde8EbaCGCfRy1x90GzgocIPw=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vcRs0zrKSxQyY351LA80PHs5ZcU=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/vtEGcHCABGFmsJay5LeN1g0Io6k=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/0LvqsbRv16xGk4lZ4SVOuGpUcL4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/1_4xTmJLm9y8KaOfx2fAMlQYwF4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/1sNuWr3s6zhK17UwE4OwBT7z+ZU=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/31lZxF2R8puLVE_qqflHW3abEHk=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/5PSam5NckBN0SzvpFee5W85j_Zg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/6nSGftvoZ5qWtKStwy4vKXPUk18=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/EGXXORmxonQMShBbzfuyqxnuCZY=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/GontoumL8pvvPMaXFnmI_ghucj4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Hd8MSSoaAcU8Wsa+Zan1n9CS1Cs=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/IMJpNpdIEs3fdxpz25tK59XywiI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/M69GW1ggbjweWlxKaE5SNGXc1qA=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/OEIGWNwIivGqiVdsiFLtSAhrJU4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/QSDca5pM252caXPwEhczdF6Shtg=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/VPORzuYkpaVXzRXcDx9Uly14O0E=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/WITFgDUwudbZQ54TTdtsonHQNOI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Z3xLzXB8IBN1rVyOEKX+q5lyI6c=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/bxkzxV9ougYk7j9o+MFTNsxhqRM=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/knfSkmr8ZW8LMcbazS0xlrW59u0=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/rP+IVICi+p_58DTAuih0KcdcJjI=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/tbmde8EbaCGCfRy1x90GzgocIPw=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/vcRs0zrKSxQyY351LA80PHs5ZcU=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/vtEGcHCABGFmsJay5LeN1g0Io6k=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et-rEE/values-et-rEE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu-rES/values-eu-rES.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl-rES/values-gl-rES.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is-rIS/values-is-rIS.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te-rIN/values-te-rIN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w360dp-v13/values-w360dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-v13/values-w480dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w720dp-v13/values-w720dp-v13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-land-v4/values-xlarge-land-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/KeXCDJ6Q0pL4PMr3CWl_DK_wskQ=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/WZsLMdi7D0mCcO2GTkWWSl3Hcn0=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/javaPrecompile/debug/annotationProcessors.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/density/debug/output.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/output.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/instant-run/debug/output.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/debug/output.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_in.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_out.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_in.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color-v11_abc_background_cache_hint_selector_material_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color-v11_abc_background_cache_hint_selector_material_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_check_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_check_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_radio_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_radio_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_rating_star_off_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_cab_background_top_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_clear_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_go_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_menu_share_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_voice_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_divider_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_focused_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_longpressed_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_pressed_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_pressed_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_selector_disabled_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_selector_disabled_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_popup_background_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_switch_track_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_tab_indicator_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_textfield_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_textfield_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_check_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_check_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_radio_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_radio_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_rating_star_off_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_cab_background_top_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_clear_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_go_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_menu_share_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_voice_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_divider_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_focused_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_longpressed_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_pressed_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_pressed_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_selector_disabled_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_selector_disabled_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_popup_background_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_switch_track_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_tab_indicator_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_textfield_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_textfield_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_check_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_check_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_radio_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_radio_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_rating_star_off_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_cab_background_top_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_clear_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_go_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_menu_share_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_ic_voice_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_divider_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_focused_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_longpressed_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_pressed_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_pressed_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_selector_disabled_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_selector_disabled_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_popup_background_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_switch_track_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ab_share_pack_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_check_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_check_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_radio_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_radio_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_rating_star_off_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_cab_background_top_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_clear_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_commit_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_go_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_share_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_voice_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_divider_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_focused_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_longpressed_holo.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_pressed_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_pressed_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_selector_disabled_holo_dark.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_list_selector_disabled_holo_light.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_menu_hardkey_panel_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_popup_background_mtrl_mult.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_switch_track_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_textfield_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_textfield_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_textfield_search_activated_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_textfield_search_default_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_check_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_check_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_radio_to_on_mtrl_000.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_radio_to_on_mtrl_015.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_switch_to_on_mtrl_00001.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_clear_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_selectall_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_menu_share_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_ic_voice_search_api_mtrl_alpha.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_spinner_mtrl_am_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_switch_track_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_borderless_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_colored_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_default_mtrl_shape.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_top_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_dialog_material_background_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_dialog_material_background_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_full_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_spinner_textfield_background_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_title_item.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_up_container.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_view_list_nav_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_mode_bar.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_search_view.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_lines.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_redbox_item_frame.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_select_dialog_item_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_select_dialog_multichoice_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-az-rAZ_values-az-rAZ.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-bn-rBD_values-bn-rBD.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-et-rEE_values-et-rEE.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-eu-rES_values-eu-rES.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-gl-rES_values-gl-rES.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-gu-rIN_values-gu-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-hy-rAM_values-hy-rAM.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-is-rIS_values-is-rIS.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ka-rGE_values-ka-rGE.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-kk-rKZ_values-kk-rKZ.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-km-rKH_values-km-rKH.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-kn-rIN_values-kn-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ky-rKG_values-ky-rKG.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-lo-rLA_values-lo-rLA.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-mk-rMK_values-mk-rMK.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ml-rIN_values-ml-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-mn-rMN_values-mn-rMN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-mr-rIN_values-mr-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ms-rMY_values-ms-rMY.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-my-rMM_values-my-rMM.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ne-rNP_values-ne-rNP.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-pa-rIN_values-pa-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-si-rLK_values-si-rLK.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sq-rAL_values-sq-rAL.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ta-rIN_values-ta-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-te-rIN_values-te-rIN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-ur-rPK_values-ur-rPK.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-uz-rUZ_values-uz-rUZ.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v12_values-v12.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-w360dp-v13_values-w360dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-w480dp-v13_values-w480dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-w500dp-v13_values-w500dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-w600dp-v13_values-w600dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-w720dp-v13_values-w720dp-v13.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-xlarge-land-v4_values-xlarge-land-v4.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/merged/debug/xml_preferences.xml.flat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/splits-support/debug/apk-list/apk-list.gson" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/splits-support/debug/split-list/split-list.gson" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/symbols/debug/R.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/18.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/24.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/27.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/28.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/29.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/35.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/36.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/37.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/38.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/39.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/40.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/41.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/45.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/46.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/47.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/50.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/51.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/52.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/53.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/54.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/55.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/56.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/57.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/58.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/59.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/60.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/61.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/62.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/63.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/64.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/65.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v4/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/android/support/v7/appcompat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/backends/pipeline/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/backends/pipeline/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/backends/pipeline/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/drawee/backends/pipeline/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/fbcore/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/fbui/textlayoutbuilder/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/fbui/textlayoutbuilder/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/imagepipeline/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/imagepipeline/backends/okhttp3/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/imagepipelinebase/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R$xml.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/react/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/facebook/soloader/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/MainActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/MainApplication$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/MainApplication.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$mipmap.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R$xml.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/com/what_to_do/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/66/org/webkit/android_jsc/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/__content__.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/arm64-v8a/libimagepipeline.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libfb.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libfolly_json.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libglog.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libglog_init.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libgnustl_shared.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libicu_common.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libimagepipeline.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libjsc.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libprivatedata.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libreactnativejni.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi-v7a/libyoga.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi/libicu_common.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/armeabi/libimagepipeline.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libfb.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libfolly_json.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libglog.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libglog_init.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libgnustl_shared.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libicu_common.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libimagepipeline.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libjsc.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libprivatedata.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libreactnativejni.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86/libyoga.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/0/lib/x86_64/libimagepipeline.so" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/debug/app-debug.apk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/debug/output.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/proguard-rules.pro" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/what_to_do/MainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/what_to_do/MainApplication.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" afterPath="$PROJECT_DIR$/android/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" afterPath="$PROJECT_DIR$/android/gradle.properties" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew" afterPath="$PROJECT_DIR$/android/gradlew" />
+      <change beforePath="$PROJECT_DIR$/android/keystores/BUCK" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/keystores/debug.keystore.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" afterPath="$PROJECT_DIR$/android/local.properties" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" afterPath="$PROJECT_DIR$/android/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/android/what_to_do.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do-tvOS/Info.plist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do-tvOSTests/Info.plist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do.xcodeproj/project.pbxproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do.xcodeproj/xcshareddata/xcschemes/what_to_do-tvOS.xcscheme" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do.xcodeproj/xcshareddata/xcschemes/what_to_do.xcscheme" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/AppDelegate.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/AppDelegate.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/Base.lproj/LaunchScreen.xib" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/Images.xcassets/Contents.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/Info.plist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_do/main.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_doTests/Info.plist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ios/what_to_doTests/what_to_doTests.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.dart_tool/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/.pub/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="990" />
+    <option name="y" value="25" />
+    <option name="width" value="930" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <option name="show-excluded-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21ef83e1-1761-4d1a-9cca-3149c0ad6057" name="Default" comment="" />
+      <created>1529819283318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529819283318</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="990" y="25" width="930" height="1053" extended-state="4" />
+    <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Flutter Inspector" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
