@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "363612604459",
+    "firebase_url": "https://what-to-do-672f3.firebaseio.com",
+    "project_id": "what-to-do-672f3",
+    "storage_bucket": "what-to-do-672f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363612604459:android:7148039321a49e83",
+        "android_client_info": {
+          "package_name": "com.what_to_do"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363612604459-0d8sog7vk7djf3vq3mq2k3th88qnhmqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtwoid5RWD7Jkg7Zymnb0MC-W7vUyiCoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

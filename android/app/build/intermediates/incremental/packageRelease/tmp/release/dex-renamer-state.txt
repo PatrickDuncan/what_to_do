@@ -1,0 +1,4 @@
+#Sat Jun 23 20:23:40 EDT 2018
+base.0=/home/patrick/dev/what_to_do/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
